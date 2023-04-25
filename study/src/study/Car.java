@@ -19,5 +19,13 @@ class Sample1 {
 		// 멤버에 접근
 		car1.num = 1234;
 		car1.gas = 20.5;
+		
+		System.out.println("차량 번호는 " + car1.num + "입니다.");
+		System.out.println("연료 양은 " + car1.gas + "입니다.");
+		
+		// 두 번째 객체
+		Car car2 = new Car();
+		car2.num = 2345;
+		car2.gas = 30.5;
 	}
 }
