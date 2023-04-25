@@ -10,8 +10,8 @@ class Car {
 	
 // 차량 정보를 표시하는 메소드 정의
 	void show() {
-		System.out.println("차량 번호는 " + num + "입니다.");
-		System.out.println("연료 양은 " + gas + "입니다.");
+		System.out.println("차량 번호는 " + this.num + "입니다.");
+		System.out.println("연료 양은 " + this.gas + "입니다.");
 	}
 }
 
