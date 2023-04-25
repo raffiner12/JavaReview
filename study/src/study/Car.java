@@ -13,6 +13,11 @@ class Car {
 		System.out.println("차량 번호는 " + this.num + "입니다.");
 		System.out.println("연료 양은 " + this.gas + "입니다.");
 	}
+	void showCar() {
+		System.out.println("지금부터 자동차의 정보를 표시합니다.");
+		// show();  // 이것도 가능.
+		this.show();  // '자기자신'의 메소드에는 this.를 붙일 수 있다.
+	}
 }
 
 // 자동차 클래스의 객체를 생성하기
@@ -28,11 +33,11 @@ class Sample1 {
 		
 		// System.out.println("차량 번호는 " + car1.num + "입니다.");
 		// System.out.println("연료 양은 " + car1.gas + "입니다.");
-		car1.show();
+		car1.showCar();
 		
 		// 두 번째 객체
-		Car car2 = new Car();
-		car2.num = 2345;
-		car2.gas = 30.5;
+//		Car car2 = new Car();
+//		car2.num = 2345;
+//		car2.gas = 30.5;
 	}
 }
